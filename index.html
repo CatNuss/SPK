@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SPK Engineering Supplies</title>
+	<link rel="stylesheet" type="text/css" href="css/index_styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Bubbler+One|Open+Sans+Condensed:300" rel="stylesheet">
+
+<!--MetaData-->
+	  <meta charset="UTF-8">
+	  <meta name="description" content="SPK Engineering Supplies">
+	  <meta name="keywords" content="Engineering, Tools, Cape-Town, South-Africa, Supplies, Bosch">
+	  <meta name="author" content="Catherine Nussey">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--MetaData-->
+</head>
+<body>
+	<header>
+			<nav>
+				<ul>
+				  <li><a href="index.html">HOME</a></li>
+				  <li><a href="about.html">ABOUT</a></li>
+				  <li><a href="contact.html">CONTACT</a></li>
+				  <li><a href="products.html">PRODUCTS</a></li>
+				</ul>
+			</nav>
+		
+			<img src="img/logo.png">
+
+				<div class="clearfix"></div>
+	</header>
+
+	<div id=slideshow>
+		<img class="slides" src="img/one.jpg">
+		<img class="slides" src="img/two.jpg">
+		<img class="slides" src="img/three.jpg">
+		<img class="slides" src="img/four.jpg">
+		<img class="slides" src="img/five.jpg">
+			
+			<div class="clearfix"></div>
+	</div>
+
+<div class="description">
+	<p>SPK is a leading supplier of a wide range of quality industrial and engineering products throughout Africa.<br> We aim to supply top quality products and an excellent choice of brands, focusing on customer satisfaction and efficient service to each one of our customers.</p>
+</div>
+	<!--JAVASCRIPT-->
+
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		    var i;
+		    var x = document.getElementsByClassName("slides");
+		    for (i = 0; i < x.length; i++) {
+		       x[i].style.display = "none";  
+		    }
+		    myIndex++;
+		    if (myIndex > x.length) {myIndex = 1}    
+		    x[myIndex-1].style.display = "block";  
+		    setTimeout(carousel, 3000);
+			}
+	</script>
+
+<footer><p><small>Copyright &copy; www.spk-sa.co.za 2017 | All Rights Reserved | Student Project by Catherine Nussey</small></p></footer>
+<div class="clearfix"></div>
+</body>
+</html>

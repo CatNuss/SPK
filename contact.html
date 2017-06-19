@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link href="https://fonts.googleapis.com/css?family=Bubbler+One|Open+Sans+Condensed:300" rel="stylesheet">
+
+<!--MetaData-->
+	  <meta charset="UTF-8">
+	  <meta name="description" content="SPK Engineering Supplies">
+	  <meta name="keywords" content="Engineering, Tools, Cape-Town, South-Africa, Supplies, Bosch">
+	  <meta name="author" content="Catherine Nussey">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--MetaData-->
+</head>
+<body>
+	<header>
+			<nav>
+				<ul>
+				  <li><a href="index.html">HOME</a></li>
+				  <li><a href="about.html">ABOUT</a></li>
+				  <li><a href="contact.html">CONTACT</a></li>
+				  <li><a href="products.html">PRODUCTS</a></li>
+				</ul>
+			</nav>
+		
+			<img src="img/logo.png">
+
+				<div class="clearfix"></div>
+	</header>
+
+<!--contact info-->
+
+<div class="contact">
+
+		<h1>E-mail Enquiries:</h1>
+			<address>
+				<a href="mailto:goodmang@spk-sa.co.za">goodmang@spk-sa.co.za</a><br>
+				<a href="mailto:anthony@spk-sa.co.za">anthony@spk-sa.co.za</a>
+			</address>
+
+		<h1>Physical Address:</h1>
+			<p>25A Paarden Eiland Road</p>
+			<p>Paarden Eiland</p>
+			<p>Cape Town</p>
+			<p>7420</p>
+
+		<h1>Telephone Number:</h1>
+			<a href="tel:+270215104928">021 510 4928</a><br>
+
+		<h1>Grahame Goodman (Sales Manager):</h1>
+			<a href="tel:+27782361373">078 236 1373</a><br>
+
+		<h1>Fax Number:</h1>
+			+27(021) 510 4927<br>
+</div>
+
+<div id="map" style="width:400px;height:400px">
+	
+</div>
+
+<script>
+      function initMap() {
+        var uluru = {lat: -33.918649, lng: 18.467969};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBef39VtuGOYncdAotXDmQ2raG6xKo8SMM&callback=initMap">
+    </script>
+<br>
+<footer><p><small>Copyright &copy; www.spk-sa.co.za 2017 | All Rights Reserved | Student Project by Catherine Nussey</small></p></footer>
+<div class="clearfix"></div>
+</body>
+</html>
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
